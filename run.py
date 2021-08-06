@@ -1,4 +1,6 @@
-# Create board with coodinates
+"""
+Create board with coordinates
+"""
 
 from random import randint
 
@@ -18,7 +20,9 @@ print_board(board)
 
 
 
-# Create ships on the board 
+"""
+Create ship on the board
+"""
 
 
 def random_row(board):
@@ -35,6 +39,25 @@ guess_col = int(input("Guess Col:"))
 
 print(ship_row)
 print(ship_col)
+
+"""
+Create conditions for the game in terms of hits , misses and scope of the coordinates
+"""
+
+
+if guess_row == ship_row and guess_col == ship_col:
+    print("You've hit a battlship!")
+
+else:
+    if (guess_row < 0 or guess_row > 4) or (guess_col < 0 or guess_col > 4):
+            print ("Missed by a long shot ,that's not even in the ocean.")
+
+
+    print("You've missed")
+    board[guess_row][guess_col] = "X"
+    print_board(board)
+
+
 
 
 
