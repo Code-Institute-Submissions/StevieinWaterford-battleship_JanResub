@@ -16,8 +16,12 @@ def print_board(board):
         print(*i)
 
 
-print("Let's play Battleship\n")
-print_board(board)
+#print("Enter your name\n")
+#print_board(board)
+NAME=str(input("Enter the name: "))
+print("hello",NAME)
+
+
 
 
 
@@ -53,6 +57,7 @@ while guesses < 4:
         board[guess_row][guess_col] == "&"
         print("You've hit a battlship!")
         break
+    #NOTE to use & as functionality , does not work presently
 
     elif (guess_row < 0 or guess_row > 4) or (guess_col < 0 or guess_col > 4):
         print("Missed by a long shot ,that's not even in the ocean.")
