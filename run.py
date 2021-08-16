@@ -55,7 +55,7 @@ while guesses < 4:
         print("You've hit a battlship!")
         break
     elif (guess_row < 0 or guess_row > 4) or (guess_col < 0 or guess_col > 4):
-        print("Missed by miles ,that's not even in the ocean.")
+        print("Missed by miles ,that's not even close.")
     elif board[guess_row][guess_col] == "X":
         print("You guessed that already")
     else:
