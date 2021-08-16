@@ -4,7 +4,8 @@ Battleships is a  terminal game that runs on Heroku. The object of the game is t
 
 https://battleshipproject.net
 
-##h2
+## Features
+This battleship game allows the user tto sink the battleship with 4 turns before it game over 
 
 ###h3
 

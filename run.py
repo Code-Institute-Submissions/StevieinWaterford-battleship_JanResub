@@ -23,8 +23,8 @@ def print_board(board):
 
 board = build_board(5)
 print_board(board)
-WELCOME = str(input('Welcome to Battleship,!!'
-'The object of the game is to sink the computers ships'))
+WELCOME = str(input('Welcome to Battleship!!'
+                    'The object of the game is to sink the computers ships'))
 NAME = str(input("Enter your name: "))
 print("hello", NAME)
 """
