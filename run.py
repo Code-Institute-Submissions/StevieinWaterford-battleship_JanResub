@@ -4,27 +4,29 @@ Create board with coordinates
 
 from random import randint
 
-board = []
+"""
+Create board with coordinates
+"""
 
-for i in range(0,5):
-    board.append(["0"]*5)
 
-print(board)
+def build_board(coords):
+    return [['O' for count in range(coords)] for count in range(coords)]
+
+
+build_board(5)
+
 
 def print_board(board):
-    for i in board:
-        print(*i)
+    for b in board:
+        print(*b)
 
 
-#print("Enter your name\n")
-#print_board(board)
-NAME=str(input("Enter the name: "))
-print("hello",NAME)
-
-
-
-
-
+board = build_board(5)
+print_board(board)
+WELCOME = str(input('Welcome to Battleship,!!'
+'The object of the game is to sink the computers ships'))
+NAME = str(input("Enter your name: "))
+print("hello", NAME)
 """
 Create ship on the board
 """
@@ -33,60 +35,35 @@ Create ship on the board
 def random_row(board):
     return randint(0, len(board) - 1)
 
+
 def random_col(board):
     return randint(0, len(board[0]) - 1)
 
 
 ship_row = random_row(board)
 ship_col = random_col(board)
-
 guesses = 0
 while guesses < 4:
     guess_row = int(input("Guess Row:"))
     guess_col = int(input("Guess Col:"))
-
     print(ship_row)
     print(ship_col)
-
     """
-    Create conditions for the game in terms of hits , misses and scope of the coordinates
+    Create conditions for game
     """
-
-
     if guess_row == ship_row and guess_col == ship_col:
-        board[guess_row][guess_col] == "&"
         print("You've hit a battlship!")
         break
-    #NOTE to use & as functionality , does not work presently
-
     elif (guess_row < 0 or guess_row > 4) or (guess_col < 0 or guess_col > 4):
-        print("Missed by a long shot ,that's not even in the ocean.")
-
+        print("Missed by miles ,that's not even in the ocean.")
     elif board[guess_row][guess_col] == "X":
         print("You guessed that already")
-
-
-    else: 
+    else:
         print("You've missed")
         board[guess_row][guess_col] = "X"
         print_board(board)
-        guesses = guesses +1
+        guesses = guesses + 1
         if guesses == 4:
             print("Game over")
-
+    print_board(board)
         
-
-
-
-
-
-#inp = input("Where do you want to shoot")
-#x, y inp.split(", ")
-#print(x)
-#print(y)
-
-#)
-
- 
-
-
