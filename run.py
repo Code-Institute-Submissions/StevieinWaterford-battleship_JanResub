@@ -23,8 +23,7 @@ def print_board(board):
 
 board = build_board(5)
 print_board(board)
-WELCOME = str(input('Welcome to Battleship!!'
-                    'The object of the game is to sink the computers ships'))
+print('Welcome to Battleship!!' 'The object of the game is to sink the computers ships \n')
 NAME = str(input("Enter your name: "))
 print("hello", NAME)
 """
@@ -43,11 +42,12 @@ def random_col(board):
 ship_row = random_row(board)
 ship_col = random_col(board)
 guesses = 0
-while guesses < 4:
+while guesses < 4: 
     guess_row = int(input("Guess Row:"))
     guess_col = int(input("Guess Col:"))
     print(ship_row)
     print(ship_col)
+
     """
     Create conditions for game
     """

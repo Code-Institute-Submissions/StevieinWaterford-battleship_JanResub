@@ -2,7 +2,12 @@
 # Battelships Project
 Battleships is a  terminal game that runs on Heroku. The object of the game is to beat the computer at the game before it beats you
 
-https://battleshipproject.net
+![Battleship](/workspace/battleship/Screenshot 2021-08-18 at 09.43.08.png)
+
+
+
+
+https://battleship-a.herokuapp.com/
 
 ## Features
 This battleship game allows the user to sink the battleship with 4 turns before it's game over. Its a simplified version of the game. The main features of the game are.
@@ -83,11 +88,3 @@ I found the following sources of help when trying to implement my project.
 * http://pep8online.com/checkresult
 
 
-
-
-
-
-
-####h4
-
-#####h5
