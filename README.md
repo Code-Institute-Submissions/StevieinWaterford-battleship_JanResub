@@ -2,7 +2,7 @@
 # Battelships Project
 Battleships is a  terminal game that runs on Heroku. The object of the game is to beat the computer at the game before it beats you
 
-![Battleship](/workspace/battleship/Screenshot 2021-08-18 at 09.43.08.png)
+![Battleship]()
 
 
 
@@ -61,8 +61,8 @@ This project was deployed on  Code Institute's mock Heroku terminal
 The site was also  deployed to GitHub pages. The steps to deploy are as follows:
 In the GitHub repository, navigate to the Settings tab
 From the source section drop-down menu, select the Master Branch
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
+Once the master branch has been selected, the page will be automatically refreshed 
+My project will not run efficiently on Heroku m, although it works well on Gitpod . I will need to rectify this proble when I repeat the project.
 
 
 
