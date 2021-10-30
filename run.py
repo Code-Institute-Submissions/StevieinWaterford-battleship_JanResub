@@ -44,8 +44,12 @@ def game():
     ship_col = random_col(board)
     guesses = 0
     while guesses < 4: 
-        guess_row = int(input("Guess Row: \n"))
-        guess_col = int(input("Guess Col: \n"))
+        try:
+            guess_row = int(input("Guess Row: \n"))
+            guess_col = int(input("Guess Col: \n"))
+        except ValueError:
+            print("You have to enter a number, plesae try again.")
+            continue
         print(ship_row)
         print(ship_col)
 
