@@ -63,7 +63,7 @@ while guesses < 4:
         board[guess_row][guess_col] = "X"
         print_board(board)
         guesses = guesses + 1
-        if guesses == 4:
-            print("Game over")
+    if guesses == 4:
+        print("Game over")
     print_board(board)
         
