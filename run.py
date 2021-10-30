@@ -24,8 +24,8 @@ def print_board(board):
 board = build_board(5)
 print_board(board)
 print('Welcome to Battleship!!' 'The object of the game is to sink the computers ships \n')
-NAME = str(input("Enter your name: "))
-print("hello", NAME)
+NAME = input("Enter your name: \n")
+print(f"hello {NAME}")
 """
 Create ship on the board
 """
