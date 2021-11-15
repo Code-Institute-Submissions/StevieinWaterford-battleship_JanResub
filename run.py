@@ -1,7 +1,3 @@
-"""
-Create board with coordinates
-"""
-
 from random import randint
 
 """
@@ -23,7 +19,8 @@ def print_board(board):
 
 board = build_board(5)
 print_board(board)
-print('Welcome to Battleship!!' 'The object of the game is to sink the computers ships \n')
+print('Welcome to Battleship!!'
+      'The object of the game is to sink the computers ships \n')
 NAME = input("Enter your name: \n")
 print(f"hello {NAME}")
 """
@@ -38,12 +35,13 @@ def random_row(board):
 def random_col(board):
     return randint(0, len(board[0]) - 1)
 
+
 def game():
 
     ship_row = random_row(board)
     ship_col = random_col(board)
     guesses = 0
-    while guesses < 4: 
+    while guesses < 4:
         try:
             guess_row = int(input("Guess Row: \n"))
             guess_col = int(input("Guess Col: \n"))
@@ -59,7 +57,7 @@ def game():
         if guess_row == ship_row and guess_col == ship_col:
             print("You've hit a battlship!")
             break
-        elif (guess_row < 0 or guess_row > 4) or (guess_col < 0 or guess_col > 4): 
+        elif (guess_row < 0 or guess_row > 4) or (guess_col < 0 or guess_col > 4):
             print("Missed by miles ,that's not even close.")
         elif board[guess_row][guess_col] == "X":
             print("You guessed that already")
@@ -67,11 +65,9 @@ def game():
             print("You've missed")
             board[guess_row][guess_col] = "X"
             print_board(board)
-            
+
         print_board(board)
-        guesses = guesses + 1    
-
-
+        guesses = guesses + 1
     print("Game over")
 
 while True:
@@ -80,4 +76,3 @@ while True:
     if play_again == "n":
         print("Goodbye!")
         break
-        
