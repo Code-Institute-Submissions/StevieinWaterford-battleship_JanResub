@@ -2,12 +2,12 @@
 # Battelships Project
 Battleships is a  terminal game that runs on Heroku. The object of the game is to beat the computer at the game before it beats you
 
-![Battleship]()
+![Battleship](images/battleship-game.png)
 
 
 
 
-https://dashboard.heroku.com/apps/battleship23
+https://battle-ship43.herokuapp.com/
 
 ## Features
 This battleship game allows the user to sink the battleship with 4 turns before it's game over. Its a simplified version of the game. The main features of the game are.
@@ -37,9 +37,9 @@ This battleship game allows the user to sink the battleship with 4 turns before 
 
 • Heroku to run the project on an external terminal
 
-• W3 Schools to learn more about Python and indentation and functions
+• W3 Schools to learn more about Python, indentation and functions
 
-• PEP8 online checker to check my results and to see   if my Python Code was formatted correctly
+• PEP8 online checker to check my results and to see if my Python Code was formatted correctly
 
 
 ## Bugs
@@ -48,7 +48,7 @@ Initially , I found it difficult to indent some of my code when passing it throu
                     'The object of the game is to sink the computers ships'))
 My indentation initially was out of place with the second line of code place to the left.
 
-* print(*b) I found that this print command was easier to implement  rather than by using join  method which I found I would not work. I tried to print " " .join board which gave an error, print(*b) however worked.
+* print(*b_e) I found that this print command was easier to implement  rather than by using join  method which I found I would not work. I tried to print " " .join board which gave an error, print(*b_e) however worked.
 
 * I employed a try and except statement  in order to  execute successfully, the program will stop at the line that caused the error and the “except” code will run. The try block allows you to test a block of code for errors.
 
@@ -69,7 +69,14 @@ PEP8. No errors were returned.
 
 ## Implementation
 The App was tested on PEP8 online checler.
-This app can be viewed on a variety of devices such as Desktop, Laptop, iPhone5, iPhone6, iPhone7 and iPhone8. .This website is also compatible with iPad and iPad Pro
+This app can be viewed on a variety of devices such as Desktop, Laptop,Tablet iPhone6, iPhone7 and iPhone8. .This website is also compatible with iPad and iPad Pro
+
+## Screenshots across devices
+
+![Battleship-laptop](images/battleship-game.png)
+![Battleship-tablet](images/tablet-screenshot.png)
+![Battleship-iphone6/7/8](images/iphone-screenshot.png)
+
 
 
 # Deployment 
@@ -96,13 +103,12 @@ Set source branch to master. This created a link to the deployed version of the 
 
 ## Credits
 
-I'd like to thank the Code Institiute Tutoring team for many of their tips when implementing this project . I found their instruction be  extremely helpful.
+I'd like to thank the Code Institiute Tutoring team for many of their tips when implementing this project . I found their instruction be  extremely helpful. I would also like to thank my 
+mentor Rohit Sharma for his input and advice.
 
 ## Media Credits
 
 I found the following sources of help when trying to implement my project.
-
-* https://www.youtube.com/watch?v=7Ki_2gr0rsE
 
 * https://www.youtube.com/watch?v=Gi0Fdyhk1_0 
 
@@ -111,5 +117,6 @@ I found the following sources of help when trying to implement my project.
 * https://stackoverflow.com
 
 * http://pep8online.com/checkresult
+
 
 

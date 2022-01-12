@@ -53,7 +53,7 @@ def game():
             guess_row = int(input('Guess Row: \n'))
             guess_column = int(input('Guess Col: \n'))
         except ValueError:
-            print('You have to enter a number, plesae try again.')
+            print('You have to enter a number, please try again.')
             continue
         print(ship_row)
         print(ship_column)
@@ -77,8 +77,7 @@ def game():
 while True:
     game()
     play_again = input(f'Would you like to play again {NAME} y/n: \n')
-    # Returns a string wirth the name of the player
+    # Returns a string with the name of the player
     if play_again.lower() == 'n':
         print('Goodbye!')
         break
-
